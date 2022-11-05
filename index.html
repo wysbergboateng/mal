@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+    name="search" placeholder="Search here......" style="color: green; margin-left: -7px;width: 40%;height: 24px;
+  position: fixed;
+  margin-top: -9px;
+  background-color: #454545;"><button class="buttons">search</button>
+  
+
+  <div class="sub">
+    <a href="https://wwww.google.com">Subcribe</a>
+  </div> 
+
+
+  <!-- Control buttons -->
+<div id="myBtnContainer" style="width: 100%;background-color: black;position: fixed; margin-top: 20px;margin-left: -7px">
+
+  <button class="btn active" onclick="filterSelection('Video')">Videos</button>
+  <button class="btn" onclick="filterSelection('Sports')">Sports</button>
+  <button class="btn" onclick="filterSelection('Games')">Games</button>
+  <button class="btn" onclick="filterSelection('App')">Apps</button>
+  <button class="btn" onclick="filterSelection('Live')">Live </button>
+</div>
+
+
+
+<div class="container" id="myTopnav" style="margin-left: -7px;">
+  <div class="filterDiv Video">
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Action</button>
+
+      <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Local</button>
+
+    
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Clip</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Romatic</button>
+
+     <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">History</button>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+
+
+<div class="container" id="myTopnav">
+  <div class="filterDiv Sports ">
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Live Score</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Live Football</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">News</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">history</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">highlights</button>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+<div class="container" id="myTopnav">
+  <div class="filterDiv Games">
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Android</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Computer</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Pes(3)</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">PSP / pes2</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Iphone</button>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+
+<div class="container" id="myTopnav">
+  <div class="filterDiv Apps">
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Computer</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Android</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Iphone</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">linux</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Books</button>
+
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+
+<div class="container" id="myTopnav">
+  <div class="filterDiv Live">
+     <button onclick="window.location.href='live tv.html' " class="active" style="background-color: black; color: white;">Local</button>
+
+    <button onclick="window.location.href='Video.html' " class="active" style="background-color: black; color: white;">Football</button>
+
+    <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">News</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">history</button>
+
+  <button onclick="window.location.href='https://www.google.com' " class="active" style="background-color: black; color: white;">Others</button>
+
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+<style>
+  body{
+    background-color: blac;
+  }
+  .container {
+  position: fixed;
+  font-size: 20px;
+  width: 100%;
+  
+
+}
+
+.filterDiv {
+  margin: 2px;
+  display: none;
+
+  /* Hidden by default */
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: green;
+  color: white;
+}
+
+button{
+  width: 18.4%;
+  color: black;
+
+  
+}
+
+</style>
+
+
+
+
+<style >
+  .container {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  margin-top: 45px;
+
+}
+
+/* Style the links inside the navigation bar */
+.container a {
+  color: #f2f2f2;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.container a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.container a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.container .icon {
+  display: none;
+}
+
+
+
+  .buttons { 
+  margin-left: 38%; 
+  position: fixed;
+  border: 2px solid black;
+  height: 29px;
+  margin-top: -8px; 
+} 
+
+  .sub { 
+  margin-left: 56%; 
+  position: fixed;
+  margin-top: -10px;
+  text-align: center;
+  background-color: green;
+  height: 22px;
+  width: 43%;
+  padding: 5px;
+
+} 
+
+.sub a{ 
+  background-color: green;
+  color: white;
+  text-decoration-line: none;
+}
+
+::placeholder{ 
+color: white;
+opacity: 70%;
+} 
+
+
+
+</style>
+
+    <div class="slideshow-container" style="margin-left: -2px; margin-top: 1px; width: 100%;text-align: center;">
+
+
+  <div class="mySlides fade" style="">
+<img src="https://firebasestorage.googleapis.com/v0/b/many-d3a99.appspot.com/o/TOTTI.jpg?alt=media&token=b429b4df-2093-47fb-a831-62277010673e" style="width:100%; height: 130px; margin-top: 78px;
+border-top-left-radius: 0px;border-top-right-radius: 0px;
+">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://firebasestorage.googleapis.com/v0/b/many-d3a99.appspot.com/o/comader.jpg?alt=media&token=fd0f4a71-36c5-40e6-b19c-d52a89faf88f" style="width:100%; height: 130px;margin-top: 78px;
+border-top-left-radius: 0px;border-top-right-radius: 0px;
+">
+  </div>
+
+
+
+  <div class="mySlides fade">
+    <img class="slide" src="https://firebasestorage.googleapis.com/v0/b/many-d3a99.appspot.com/o/FIFA.jpg?alt=media&token=6d4d2f2c-4bbc-4b8f-a285-f4f73d622bf6" style="width:100%; height: 130px;margin-top: 78px;
+border-top-left-radius: 0px;border-top-right-radius: 0px;
+">
+  </div>
+
+
+
+
+<div id="main">
+
+
+ <div class="animals" style="margin-top: 218px;width: %;height: 50%">
+    <div id="d1">
+    <a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/81MWdX1PmJL._SX342_.jpg"></a>
+    <h2 >aventures infinity war2</h2>
+  </div>
+ </div>
+
+
+ <div class="animals" style="margin-top: -190px;width: %;height: 50%;margin-left: 52%;">
+    <div id="d1">
+    <a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/81MWdX1PmJL._SX342_.jpg"></a>
+    <h2 >aventures infinity war2</h2>
+  </div>
+ </div>
+
+ <div class="animals" style="margin-top: -26px;width: %;height: 50%">
+    <div id="d1">
+    <a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/81MWdX1PmJL._SX342_.jpg"></a>
+    <h2 >aventures infinity war2</h2>
+  </div>
+ </div>
+
+
+ <div class="animals" style="margin-top: -187px;width: %;height: 50%;margin-left: 52%;">
+    <div id="d1">
+    <a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/81MWdX1PmJL._SX342_.jpg"></a>
+    <h2 >aventures infinity war2</h2>
+  </div>
+ </div>
+
+
+
+</div>
+
+
+
+
+<style>
+
+  body{
+    
+  }
+  #main{
+  width:100%;
+  margin-top: -220px;
+  
+  
+}
+#main > div{
+  margin-left: 8px;
+}
+
+
+
+#d1{
+  width:60%;
+  height:190px;
+  border-radius: 20%; 
+}
+
+#d2{
+  width:60%;
+  height:190px;
+  border-radius: 20%; 
+
+}
+
+
+img{
+ width: 150%; 
+height: 120px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+
+
+
+}
+
+.animals{
+ width: 45%; 
+height: 190px;
+
+
+
+
+}
+
+h2{
+  margin-top:-7px;
+   width: 147%;
+   height: 20%; 
+  background-color: #F0F8FF;
+  font-size: 14px;
+   border:1px solid black;
+   border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+   margin-left: 1%;
+
+}
+</style>
+
+
+<script>
+  filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+  <script>
+    // JavaScript code 
+function search_animal() { 
+  let input = document.getElementById('searchbar').value 
+  input=input.toLowerCase(); 
+  let x = document.getElementsByClassName('animals'); 
+  
+  for (i = 0; i < x.length; i++) { 
+    if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+      x[i].style.display="none"; 
+    } 
+    else { 
+      x[i].style.display="list-item";        
+    } 
+  } 
+} 
+
+  </script> 
+
+  <script>
+
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+</script>
