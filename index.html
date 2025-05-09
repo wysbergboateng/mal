@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Redirect</title>
+    <script>
+        function checkNumber() {
+            // Define an array of correct numbers
+            const correctNumbers = [5240100089, 67890, 54321, 100];
+
+            // Get the user's input
+            const userNumber = document.getElementById("numberInput").value;
+
+            // Check if the input matches any number in the array
+            if (correctNumbers.includes(parseInt(userNumber))) {
+                // Redirect to the desired URL
+                window.location.href = "www.google.com";
+            } else {
+                // Show an alert if the number is incorrect
+                alert("Index number is incorrect");
+            }
+        }
+    </script>
+
+    </head>
+<body background="hall.jpg">
+    
+
+    <h1>ITE LEVEL 100 (A) CLASS</h1>
+    <p>Enter your index number for A Class Whatsapp group</p>
+    <input type="number" id="numberInput" placeholder="Enter your index number">
+    <button onclick="checkNumber()">Submit</button> <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+
+</body>
+</html>
+
+
+
